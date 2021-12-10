@@ -3,6 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class CounterBloc {
+  // catatan BLOC
+  // 1. Pertama ia akan masuk melalui sink get => StreamSink() get
+  //2. Lanjut diproses menuju mesin (input) dengan controller => StreamController
+  // 3. hasil dari proses mesin dijadikan output controler => StreamController()
+  // 4. lanjut hasil proses nya di event listen sink get => StreamSink() get
+  // 5. tahap akhir menuju ke aplikasi/output dengan Stream => Steam() dengan get
+
   int _counter = 0;
 
   StreamController _inputController = StreamController();
